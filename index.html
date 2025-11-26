@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Toggle Demo</title>
+  <link rel="stylesheet" href="app.css" />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="theme-color" content="#06b6d4" />
+</head>
+<body>
+  <main class="container">
+    <h1>Toggle Demo</h1>
+
+    <div class="toggle-row">
+      <label class="switch" for="toggle">
+        <input id="toggle" type="checkbox" aria-checked="false" />
+        <span class="slider" aria-hidden="true"></span>
+      </label>
+
+      <div class="state-wrap">
+        <p id="state" class="state" aria-live="polite">Off</p>
+        <button id="reset" class="btn">Reset</button>
+      </div>
+    </div>
+
+    <p class="note">This is a small web-app you can open in a browser on Android or desktop.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
